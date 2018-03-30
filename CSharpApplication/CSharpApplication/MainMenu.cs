@@ -42,21 +42,21 @@ namespace CSharpApplication
                 Music.playMusic();
                 return true;
             }
-            //else if (result == "3")
-            //{
-            //    Speak.talking();
-            //    return true;
-            //}
-            //else if (result == "4")
-            //{
-            //    Age.agePlay();
-            //    return true;
-            //}
-            //else if (result == "5")
-            //{
-            //    Guessing.guessingPlay();
-            //    return true;
-            //}
+            else if (result == "3")
+            {
+                Speak.talking();
+                return true;
+            }
+            else if (result == "4")
+            {
+                Age.agePlay();
+                return true;
+            }
+            else if (result == "5")
+            {
+                Guessing.guessingPlay();
+                return true;
+            }
             //else if (result == "6")
             //{
             //    Roulette.roulettePlay();
