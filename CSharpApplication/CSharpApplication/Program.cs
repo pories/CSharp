@@ -13,7 +13,7 @@ namespace CSharpApplication
             bool displayMenu = true;
             while (displayMenu == true)
             {
-                displayMenu = CollectionMainMenu.userMainMenu();
+                displayMenu = MainMenu.userMainMenu();
             }
         }
     }

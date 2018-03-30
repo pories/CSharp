@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Applications;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,71 +37,71 @@ namespace CSharpApplication
                 Address.check();
                 return true;
             }
-            else if (result == "2")
-            {
-                Music.playMusic();
-                return true;
-            }
-            else if (result == "3")
-            {
-                Speak.talking();
-                return true;
-            }
-            else if (result == "4")
-            {
-                Age.agePlay();
-                return true;
-            }
-            else if (result == "5")
-            {
-                Guessing.guessingPlay();
-                return true;
-            }
-            else if (result == "6")
-            {
-                Roulette.roulettePlay();
-                return true;
-            }
-            else if (result == "7")
-            {
-                Crapps.crappsPlay();
-                return true;
-            }
-            else if (result == "8")
-            {
-                TwoSum.doesitadd();
-                return true;
-            }
-            else if (result == "9")
-            {
-                Dice.rollem();
-                return true;
-            }
-            else if (result == "10")
-            {
-                ArraySearch.searchtime();
-                return true;
-            }
-            else if (result == "11")
-            {
-                Fizz.buzz();
-                return true;
-            }
-            else if (result == "12")
-            {
-                SieveOfEratosthenesList.PrimesList();
-                return true;
-            }
-            else if (result == "14")
-            {
-                Sieve_of_EratosthenesHash.primehash();
-                return true;
-            }
-            else if (result == "15")
-            {
-                calculator.numbers();
-                return true;
-            }
+            //else if (result == "2")
+            //{
+            //    Music.playMusic();
+            //    return true;
+            //}
+            //else if (result == "3")
+            //{
+            //    Speak.talking();
+            //    return true;
+            //}
+            //else if (result == "4")
+            //{
+            //    Age.agePlay();
+            //    return true;
+            //}
+            //else if (result == "5")
+            //{
+            //    Guessing.guessingPlay();
+            //    return true;
+            //}
+            //else if (result == "6")
+            //{
+            //    Roulette.roulettePlay();
+            //    return true;
+            //}
+            //else if (result == "7")
+            //{
+            //    Crapps.crappsPlay();
+            //    return true;
+            //}
+            //else if (result == "8")
+            //{
+            //    TwoSum.doesitadd();
+            //    return true;
+            //}
+            //else if (result == "9")
+            //{
+            //    Dice.rollem();
+            //    return true;
+            //}
+            //else if (result == "10")
+            //{
+            //    ArraySearch.searchtime();
+            //    return true;
+            //}
+            //else if (result == "11")
+            //{
+            //    Fizz.buzz();
+            //    return true;
+            //}
+            //else if (result == "12")
+            //{
+            //    SieveOfEratosthenesList.PrimesList();
+            //    return true;
+            //}
+            //else if (result == "14")
+            //{
+            //    Sieve_of_EratosthenesHash.primehash();
+            //    return true;
+            //}
+            //else if (result == "15")
+            //{
+            //    calculator.numbers();
+            //    return true;
+            //}
             else
             {
                 Null.Object();

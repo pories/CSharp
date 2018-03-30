@@ -11,7 +11,7 @@ namespace CSharpApplication
         public static void Object()
         {
 
-            Console.WriteLine("Hit any key to exit.");
+            Console.WriteLine("Not a listed choice. Hit any key to exit.");
             Console.ReadKey(true);
         }
     }
