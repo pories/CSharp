@@ -87,21 +87,21 @@ namespace CSharpApplication
                 Fizz.buzz();
                 return true;
             }
-            //else if (result == "12")
-            //{
-            //    SieveOfEratosthenesList.PrimesList();
-            //    return true;
-            //}
-            //else if (result == "14")
-            //{
-            //    Sieve_of_EratosthenesHash.primehash();
-            //    return true;
-            //}
-            //else if (result == "15")
-            //{
-            //    calculator.numbers();
-            //    return true;
-            //}
+            else if (result == "12")
+            {
+                SieveOfEratosthenesList.PrimesList();
+                return true;
+            }
+            else if (result == "14")
+            {
+                Sieve_of_EratosthenesHash.primehash();
+                return true;
+            }
+            else if (result == "15")
+            {
+                calculator.numbers();
+                return true;
+            }
             else
             {
                 Null.Object();

@@ -15,8 +15,8 @@ namespace Applications
             while (repeat)
             {
                 Console.WriteLine("Fizzbuzz!");
-                Console.WriteLine("If a number is divisable by 3 write fizz, by 5 write buzz, and 7 write fizzbuzz.");
-                Console.WriteLine("Please enter a number to have fizzbuzz goto!");
+                Console.WriteLine("If a number is divisible by 3 write fizz, by 5 write buzz, and 7 write fizzbuzz.");
+                Console.WriteLine("Please enter a number to have fizzbuzz go to!");
                 Console.Write("Enter a whole number here: ");
 
                 try
