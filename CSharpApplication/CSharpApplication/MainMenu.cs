@@ -37,11 +37,11 @@ namespace CSharpApplication
                 Address.check();
                 return true;
             }
-            //else if (result == "2")
-            //{
-            //    Music.playMusic();
-            //    return true;
-            //}
+            else if (result == "2")
+            {
+                Music.playMusic();
+                return true;
+            }
             //else if (result == "3")
             //{
             //    Speak.talking();
