@@ -57,36 +57,36 @@ namespace CSharpApplication
                 Guessing.guessingPlay();
                 return true;
             }
-            //else if (result == "6")
-            //{
-            //    Roulette.roulettePlay();
-            //    return true;
-            //}
-            //else if (result == "7")
-            //{
-            //    Crapps.crappsPlay();
-            //    return true;
-            //}
-            //else if (result == "8")
-            //{
-            //    TwoSum.doesitadd();
-            //    return true;
-            //}
-            //else if (result == "9")
-            //{
-            //    Dice.rollem();
-            //    return true;
-            //}
-            //else if (result == "10")
-            //{
-            //    ArraySearch.searchtime();
-            //    return true;
-            //}
-            //else if (result == "11")
-            //{
-            //    Fizz.buzz();
-            //    return true;
-            //}
+            else if (result == "6")
+            {
+                Roulette.roulettePlay();
+                return true;
+            }
+            else if (result == "7")
+            {
+                Crapps.crappsPlay();
+                return true;
+            }
+            else if (result == "8")
+            {
+                TwoSum.doesitadd();
+                return true;
+            }
+            else if (result == "9")
+            {
+                Dice.rollem();
+                return true;
+            }
+            else if (result == "10")
+            {
+                ArraySearch.searchtime();
+                return true;
+            }
+            else if (result == "11")
+            {
+                Fizz.buzz();
+                return true;
+            }
             //else if (result == "12")
             //{
             //    SieveOfEratosthenesList.PrimesList();
