@@ -29,6 +29,8 @@ namespace CSharpApplication
             Console.WriteLine("13) Nothing here! 13 is Unlucky!!");
             Console.WriteLine("14) Sieve of Eratosthenes as a hash!");
             Console.WriteLine("15) Calculator! That is cool!");
+            Console.WriteLine("16) How does the swap method rearrange values?");
+            Console.WriteLine("17) ++Variable, or Variable++, what is the difference?");
             Console.WriteLine("Or hit any other key for end program prompt.");
             Console.Write("Choose here: ");
             string result = Console.ReadLine();
@@ -100,6 +102,19 @@ namespace CSharpApplication
             else if (result == "15")
             {
                 calculator.numbers();
+                return true;
+            }
+            else if (result == "16")
+            {
+                int a = 20;
+                int b = 30;
+                Swap.SwapNum(ref a, ref b);
+                Console.ReadLine();
+                return true;
+            }
+            else if (result == "17")
+            {
+                AssignmentThenOperation.Execute();
                 return true;
             }
             else
