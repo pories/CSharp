@@ -10,6 +10,7 @@ namespace Applications
     {
         public static void SwapNum(ref int a, ref int b)
         {
+            Console.Clear();
             Console.WriteLine("In swap method");
             Console.Write("Inital values: ");
             Console.WriteLine("A = {0}, B = {1}", a, b);

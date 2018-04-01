@@ -25,7 +25,7 @@ namespace Applications
             Console.WriteLine("Ran operation: b = a++;");
             Console.WriteLine("b=" + b);
             Console.WriteLine("a=" + a);
-            Console.WriteLine("The returned value is the one before it is incrimented.");
+            Console.WriteLine("The returned value is the one before it is incremented.");
 
 
             int c = 20;
@@ -36,7 +36,7 @@ namespace Applications
             Console.WriteLine("Ran operation: d = ++c;");
             Console.WriteLine("d=" + d);
             Console.WriteLine("c=" + c);
-            Console.WriteLine("The returned value is the one after it is incrimented.");
+            Console.WriteLine("The returned value is the one after it is incremented.");
             Console.WriteLine("Hit any key to exit.");
             Console.ReadLine();
 
