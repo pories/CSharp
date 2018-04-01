@@ -49,13 +49,13 @@
     <Compile Include="Dice.cs" />
     <Compile Include="Fizz.cs" />
     <Compile Include="Guessing.cs" />
-    <Compile Include="IEnumerableVSIEnumerator.cs" />
     <Compile Include="Music.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roulette.cs" />
     <Compile Include="SieveOfEratosthenesList.cs" />
     <Compile Include="Sieve_of_EratosthenesHash.cs" />
     <Compile Include="Speak.cs" />
+    <Compile Include="Swap.cs" />
     <Compile Include="TwoSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
