@@ -49,6 +49,7 @@
     <Compile Include="Dice.cs" />
     <Compile Include="Fizz.cs" />
     <Compile Include="Guessing.cs" />
+    <Compile Include="IEnumerableVSIEnumerator.cs" />
     <Compile Include="Music.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roulette.cs" />
