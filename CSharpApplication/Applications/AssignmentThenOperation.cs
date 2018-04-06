@@ -11,7 +11,7 @@ namespace Applications
         public static void Execute()
         {
             Console.Clear();
-            Console.WriteLine("We have all seen it. A variable that looks like this: a++ or this: ++a.");
+            Console.WriteLine("We have all seen it. A variable operation that looks like this: a++ or this: ++a.");
             Console.WriteLine("What is the difference? This will give you a simple visual way to see.");
             Console.WriteLine("Variable++:  Assignment then operation.");
             Console.WriteLine("++Variable: Operation then assignment.");
