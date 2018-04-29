@@ -46,6 +46,7 @@
     <Compile Include="ArraySearch.cs" />
     <Compile Include="AssignmentThenOperation.cs" />
     <Compile Include="calculator.cs" />
+    <Compile Include="Collections.cs" />
     <Compile Include="Crapps.cs" />
     <Compile Include="Dice.cs" />
     <Compile Include="Fizz.cs" />
