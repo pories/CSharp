@@ -33,6 +33,7 @@ namespace CSharpApplication
             Console.WriteLine("17) ++Variable, or Variable++, what is the difference?");
             Console.WriteLine("18) Lets talk about collections!");
             Console.WriteLine("19) Lets talk about synchronous vs asynchronous!");
+            Console.WriteLine("20) MD5 Hash password crack!");
             Console.WriteLine("Or hit any other key for end program prompt.");
             Console.Write("Choose here: ");
             string result = Console.ReadLine();
@@ -127,6 +128,11 @@ namespace CSharpApplication
             else if (result == "19")
             {
                 SyncVsASync.Execute();
+                return true;
+            }
+            else if (result == "20")
+            {
+                MD5HashCrack.Execute();
                 return true;
             }
             else
