@@ -25,9 +25,8 @@ namespace Applications
             {
                 if (MD5Hash(Pass) == Hash)
                 {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+
                     Console.WriteLine(Pass);
-                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
                     Console.ResetColor();
                     Console.ReadKey();
@@ -38,7 +37,7 @@ namespace Applications
 
                 else
                 {
-                    Console.WriteLine(Pass);
+                    //Console.WriteLine(Pass);
 
                 }
                 Count++;
