@@ -25,9 +25,9 @@ namespace Applications
             {
                 if (MD5Hash(Pass) == Hash)
                 {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Console.WriteLine(Pass);
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
                     Console.ResetColor();
                     Console.ReadKey();
@@ -47,6 +47,7 @@ namespace Applications
 
             }
             file.Close(); // Close the file stream.
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
         public static string MD5Hash(string inputString)
