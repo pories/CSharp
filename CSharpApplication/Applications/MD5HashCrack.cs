@@ -31,20 +31,22 @@ namespace Applications
                     Console.WriteLine(Pass);
                     //Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
                     Console.WriteLine("Cracked hash = " + Pass);
-                    Console.ReadKey();
+                    //Console.ReadKey();
                     closeLoop = false;
                     file.Close(); // Close the file stream.
+                    break;
                 }
                 else
                 {
-                    Console.WriteLine(Pass);                 
+                    Console.WriteLine(Pass);
+                    //put counter in here.
+                    Count++;
                 }
-                Count++;
+                //Count++;
                 //Console.Title = "Current password count: " + Count.ToString();
                 //Thread.Sleep(10); //This is commented out, but if your CPU has issues, you can add it back. Lower is smaller sleep number. 
             }
             file.Close(); // Close the file stream.
-            Console.WriteLine("If you get here. It wasn't found. ");
             Console.WriteLine("Hit any key to exit back to main menu.");
             Console.ReadKey();
         }
