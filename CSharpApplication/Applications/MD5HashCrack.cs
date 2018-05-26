@@ -14,41 +14,40 @@ namespace Applications
        public static void Execute()
         {
             string Hash = "";
-            Console.Write("Enter your MD5 Hash: ");
+            Console.Write("Enter your MD5 password's Hash: ");
             Hash = Console.ReadLine().ToUpper();
-            string Pass = "";
-            int Count = 0;
-            bool closeLoop = true;
-
-            StreamReader file = new StreamReader(@"Passwords10m.txt");
-            while (closeLoop == true && (Pass = file.ReadLine()) != null)
+            if (string.IsNullOrEmpty(Hash))
             {
-                if (MD5Hash(Pass) == Hash)
-                {
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine(Pass);
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
-                    Console.ResetColor();
-                    Console.ReadKey();
-
-                    closeLoop = false;
-                    file.Close(); // Close the file stream.
-                }
-
-                else
-                {
-                    Console.WriteLine(Pass);
-
-                }
-                Count++;
-                Console.Title = "Current password count: " + Count.ToString();
-                //Thread.Sleep(10); //This is commented out, but if your CPU has issues, you can add it back. Lower is smaller sleep number. 
-
+                Console.WriteLine("Nothing here, hit any key to exit.");
+                Console.ReadKey();
             }
-            file.Close(); // Close the file stream.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            else
+            {
+                string Pass = "";
+                int Count = 0;
+                bool closeLoop = true;
+                StreamReader file = new StreamReader(@"Passwords10m.txt");
+                while (closeLoop == true && (Pass = file.ReadLine()) != null)
+                {
+                    if (MD5Hash(Pass) == Hash)
+                    {
+                        Console.WriteLine("Cracked hash = " + Pass);
+                        Console.ReadKey();
+                        closeLoop = false;
+                        file.Close();
+                    }
+                    else
+                    {
+                        //Console.WriteLine(Pass); //Used if you want to list out the passwords you tried.
+                        Count++;
+                    }
+                    //Count++;
+                    //Thread.Sleep(10); //This is commented out, but if your CPU has issues, you can add it back. Lower is smaller sleep number. 
+                }
+                file.Close(); // Close the file stream.
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
+            }   
         }
         public static string MD5Hash(string inputString)
         {

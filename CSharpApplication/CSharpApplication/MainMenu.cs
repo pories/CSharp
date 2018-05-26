@@ -11,7 +11,7 @@ namespace CSharpApplication
     {
         public static bool userMainMenu()
         {
-
+            Console.Title = "Fun with C#!";
             Console.Clear();
             Console.WriteLine("Welcome to my fun with console window app!");
             Console.WriteLine("1)  Check the DNS address of any website!");
