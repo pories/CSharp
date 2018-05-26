@@ -13,36 +13,39 @@ namespace Applications
     {
         public static void Execute()
         {
+            Console.Clear();
             string Hash = "";
             Console.Write("Enter your MD5 Hash: ");
             Hash = Console.ReadLine().ToUpper();
             string Pass = "";
             int Count = 0;
             bool closeLoop = true;
+            //Below is the small password file. 
             StreamReader file = new StreamReader(@"Passwords10m.txt");
+            //Below is the large password file. 
+            //StreamReader file = new StreamReader(@"Passwords200MB.txt");
             while (closeLoop == true && (Pass = file.ReadLine()) != null)
             {
                 if (MD5Hash(Pass) == Hash)
                 {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine(Pass);
-                    Console.ForegroundColor = ConsoleColor.Green;
                     //Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
                     Console.WriteLine("Cracked hash = " + Pass);
-                    Console.ResetColor();
                     Console.ReadKey();
                     closeLoop = false;
                     file.Close(); // Close the file stream.
                 }
                 else
                 {
-                    Console.WriteLine(Pass);
+                    Console.WriteLine(Pass);                 
                 }
                 Count++;
                 //Console.Title = "Current password count: " + Count.ToString();
                 //Thread.Sleep(10); //This is commented out, but if your CPU has issues, you can add it back. Lower is smaller sleep number. 
             }
             file.Close(); // Close the file stream.
+            Console.WriteLine("If you get here. It wasn't found. ");
+            Console.WriteLine("Hit any key to exit back to main menu.");
             Console.ReadKey();
         }
         public static string MD5Hash(string inputString)
