@@ -27,7 +27,8 @@ namespace Applications
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine(Pass);
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
+                    //Console.WriteLine("Cracked hash = " + Pass + "\n\r" + MD5Hash(Pass));
+                    Console.WriteLine("Cracked hash = " + Pass);
                     Console.ResetColor();
                     Console.ReadKey();
                     closeLoop = false;
