@@ -11,7 +11,7 @@ namespace CSharpApplication
         static void Main(string[] args)
         {
             bool displayMenu = true;
-            while (displayMenu == true)
+            while (displayMenu)
             {
                 displayMenu = MainMenu.userMainMenu();
             }
