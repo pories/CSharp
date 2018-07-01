@@ -21,6 +21,7 @@ namespace Applications
             int Count = 0;
             bool closeLoop = true;
             //Below is the small password file. It goes in csharp/csharpapplication/csharpapplication/bin/debug 
+            //The @ symbol is the escape symbol lets you deal with / in file paths. 
             StreamReader file = new StreamReader(@"Passwords10m.txt");
             //Below is the large password file. 
             //StreamReader file = new StreamReader(@"Passwords200MB.txt");
