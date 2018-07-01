@@ -10,7 +10,6 @@ namespace CSharpApplication
     {
         public static void Object()
         {
-
             Console.WriteLine("Not a listed choice. Hit any key to exit.");
             Console.ReadKey(true);
         }
