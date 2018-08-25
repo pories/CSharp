@@ -60,6 +60,7 @@
     <Compile Include="Speak.cs" />
     <Compile Include="Swap.cs" />
     <Compile Include="SyncVsASync.cs" />
+    <Compile Include="TempSwap.cs" />
     <Compile Include="TwoSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
